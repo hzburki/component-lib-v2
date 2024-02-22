@@ -1,13 +1,13 @@
 import type { ReactNode } from 'react';
 
-export type TextareaProps = {
+export type CheckboxProps = {
   /**
    * sets the component children.
    */
   children?: ReactNode;
 };
 
-export function Textarea({ children }: TextareaProps) {
+export function Checkbox({ children }: CheckboxProps) {
   return (
     <div>
       {children}

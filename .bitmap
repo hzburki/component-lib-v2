@@ -18,25 +18,25 @@
     },
     "atoms/buttons": {
         "name": "atoms/buttons",
-        "scope": "",
-        "version": "",
-        "defaultScope": "numudev.library",
+        "scope": "numudev.library",
+        "version": "ca56fb02a25b80dccbdf4abb2fb7b34f2acca906",
         "mainFile": "index.ts",
-        "rootDir": "src/library/atoms/buttons",
-        "config": {
-            "bitdev.react/react-env@1.1.43": {},
-            "teambit.envs/envs": {
-                "env": "bitdev.react/react-env"
-            }
-        }
+        "rootDir": "src/library/atoms/buttons"
     },
     "atoms/divider": {
         "name": "atoms/divider",
+        "scope": "numudev.library",
+        "version": "43be5bfa7a542f8454f558c25fd2a126ed379672",
+        "mainFile": "index.ts",
+        "rootDir": "src/library/atoms/divider"
+    },
+    "forms/checkbox": {
+        "name": "forms/checkbox",
         "scope": "",
         "version": "",
         "defaultScope": "numudev.library",
         "mainFile": "index.ts",
-        "rootDir": "src/library/atoms/divider",
+        "rootDir": "src/library/forms/checkbox",
         "config": {
             "bitdev.react/react-env@1.1.43": {},
             "teambit.envs/envs": {
@@ -46,17 +46,10 @@
     },
     "forms/textarea": {
         "name": "forms/textarea",
-        "scope": "",
-        "version": "",
-        "defaultScope": "numudev.library",
+        "scope": "numudev.library",
+        "version": "2bea8b25c92c35adf319157336a6e9e57c256571",
         "mainFile": "index.ts",
-        "rootDir": "src/library/forms/textarea",
-        "config": {
-            "bitdev.react/react-env@1.1.43": {},
-            "teambit.envs/envs": {
-                "env": "bitdev.react/react-env"
-            }
-        }
+        "rootDir": "src/library/forms/textarea"
     },
     "side-menu": {
         "name": "side-menu",
