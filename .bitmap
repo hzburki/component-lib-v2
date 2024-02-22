@@ -16,57 +16,12 @@
         "mainFile": "index.ts",
         "rootDir": "src/components/analytics-drawer"
     },
-    "button": {
-        "name": "button",
-        "scope": "",
-        "version": "",
-        "defaultScope": "numudev.library",
-        "mainFile": "index.ts",
-        "rootDir": "src/library/atoms/button",
-        "config": {
-            "bitdev.react/react-env@1.1.43": {},
-            "teambit.envs/envs": {
-                "env": "bitdev.react/react-env"
-            }
-        }
-    },
-    "divider": {
-        "name": "divider",
-        "scope": "",
-        "version": "",
-        "defaultScope": "numudev.library",
-        "mainFile": "index.ts",
-        "rootDir": "src/library/atoms/divider",
-        "config": {
-            "bitdev.react/react-env@1.1.43": {},
-            "teambit.envs/envs": {
-                "env": "bitdev.react/react-env"
-            }
-        }
-    },
     "side-menu": {
         "name": "side-menu",
-        "scope": "",
-        "version": "",
-        "defaultScope": "numudev.components",
+        "scope": "numudev.components",
+        "version": "df0cf22b35431d7b2c09acb1315839337dcbd4d4",
         "mainFile": "index.ts",
-        "rootDir": "src/components/side-menu",
-        "config": {
-            "bitdev.react/react-env@1.1.43": {},
-            "teambit.envs/envs": {
-                "env": "bitdev.react/react-env"
-            }
-        }
-    },
-    "textarea": {
-        "name": "textarea",
-        "scope": "numudev.library",
-        "version": "0.0.2",
-        "mainFile": "index.ts",
-        "rootDir": "src/library/forms/button",
-        "config": {
-            "bitdev.react/react-env@1.1.43": {}
-        }
+        "rootDir": "src/components/side-menu"
     },
     "$schema-version": "17.0.0"
 }
