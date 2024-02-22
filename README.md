@@ -2,9 +2,9 @@
 
 This repository contains the Numu Component Library V2. It is a collection of reusable components that can be used to build web applications. The components are divided into two parts;
 
-1. **Core Components**: These are components core to the product for example campaign form or campaign card, etc. They are bigger and more complex components which maintain their own states and side effects.
+1. **Components**: These are components core to the product for example campaign form or campaign card, etc. They are bigger and more complex components which maintain their own states and side effects.
 
-2. **UI Components**: These are atomic UI components which are essentially the building blocks of the product. For example, button, input, etc.
+2. **Library**: These are atomic UI components which are essentially the building blocks of the product. For example, button, input, etc.
 
 The repository is built with ReactJS and bundled with Vite. It is written in TypeScript and uses TailwindCSS (mostly) for styling.
 
@@ -17,27 +17,33 @@ All the components Core and UI are deployed on Bit Dev. You can find the compone
 1. Organization:              numudev
 2. Workspace:                 component-lib-v2 
 3. Scope:                     
-   1. core components:        core                   
-   2. ui components:          ui
+   1. components                
+   2. library
 
-## Commmands
+## Setup Bit Dev
+
+
+
+## Using Bit Dev
+
+
 
 ### Create a new component
 
 ```bash
-bit create react {COMPONENT_NAME} --default-scope {core|ui} --path {src/{core|ui}/{|atom,components,forms,tables,typography}}
+bit create react {COMPONENT_NAME} --default-scope {components|library} --path {src/{components|library}/{|atom,components,forms,tables,typography}}
 ```
 
 * react 
   * This is the name of the bit dev template to create a React based UI component. 
 * --default-scope 
   * This flag is used to specify the scope of the component. 
-  * There are two scopes namely, core and ui. 
+  * There are two scopes namely, **components** and **library**. 
   * One of the scopes should always be specified. 
 * --path
   * This flag is used to specify where, in the code, the component should be created.
-  * Do **NOT** use this flag when scope is **core**.
-  * The values for the **ui** scope are as follows:
+  * Do **NOT** use this flag when scope is **components**.
+  * The values for the **library** scope are as follows:
     * atom
     * components
     * forms

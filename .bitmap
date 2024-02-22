@@ -9,29 +9,5 @@
  */
 
 {
-    "analytics-drawer": {
-        "name": "analytics-drawer",
-        "scope": "",
-        "version": "0.0.1",
-        "defaultScope": "core",
-        "mainFile": "index.ts",
-        "rootDir": "src/core/analytics-drawer"
-    },
-    "divider": {
-        "name": "divider",
-        "scope": "",
-        "version": "0.0.1",
-        "defaultScope": "ui",
-        "mainFile": "index.ts",
-        "rootDir": "src/ui/atom"
-    },
-    "textarea": {
-        "name": "textarea",
-        "scope": "",
-        "version": "0.0.1",
-        "defaultScope": "ui",
-        "mainFile": "index.ts",
-        "rootDir": "src/ui/form"
-    },
     "$schema-version": "17.0.0"
 }
