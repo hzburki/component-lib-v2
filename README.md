@@ -30,14 +30,18 @@ All the components Core and UI are deployed on Bit Dev. You can find the compone
 ### Create a new component
 
 ```bash
-bit create react {COMPONENT_NAME} --scope {numudev.components|numudev.library} --path {src/{components|library}/{|atom,components,forms,tables,typography}}/{COMPONENT_NAME}
+# Create a library package
+bit create react {atom,components,forms,tables,typography}/{COMPONENT_NAME} --scope numudev.library
+
+# Create a Component package
+bit create react {COMPONENT_NAME} --scope numudev.components
 ```
 
 **examples**
 
 ```bash
-bit create react button --default-scope numudev.components
-bit create react button --default-scope numudev.library --path src/library/atoms/button
+bit create react atoms/button --default-scope numudev.library
+bit create react atoms/campaign-card --default-scope numudev.components
 ```
 
 * react 

@@ -16,6 +16,48 @@
         "mainFile": "index.ts",
         "rootDir": "src/components/analytics-drawer"
     },
+    "atoms/buttons": {
+        "name": "atoms/buttons",
+        "scope": "",
+        "version": "",
+        "defaultScope": "numudev.library",
+        "mainFile": "index.ts",
+        "rootDir": "src/library/atoms/buttons",
+        "config": {
+            "bitdev.react/react-env@1.1.43": {},
+            "teambit.envs/envs": {
+                "env": "bitdev.react/react-env"
+            }
+        }
+    },
+    "atoms/divider": {
+        "name": "atoms/divider",
+        "scope": "",
+        "version": "",
+        "defaultScope": "numudev.library",
+        "mainFile": "index.ts",
+        "rootDir": "src/library/atoms/divider",
+        "config": {
+            "bitdev.react/react-env@1.1.43": {},
+            "teambit.envs/envs": {
+                "env": "bitdev.react/react-env"
+            }
+        }
+    },
+    "forms/textarea": {
+        "name": "forms/textarea",
+        "scope": "",
+        "version": "",
+        "defaultScope": "numudev.library",
+        "mainFile": "index.ts",
+        "rootDir": "src/library/forms/textarea",
+        "config": {
+            "bitdev.react/react-env@1.1.43": {},
+            "teambit.envs/envs": {
+                "env": "bitdev.react/react-env"
+            }
+        }
+    },
     "side-menu": {
         "name": "side-menu",
         "scope": "numudev.components",
