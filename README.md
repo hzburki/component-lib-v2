@@ -23,7 +23,6 @@ All the components Core and UI are deployed on Bit Dev. You can find the compone
 ## Setup Bit Dev
 
 
-
 ## Using Bit Dev
 
 
@@ -31,7 +30,7 @@ All the components Core and UI are deployed on Bit Dev. You can find the compone
 ### Create a new component
 
 ```bash
-bit create react {COMPONENT_NAME} --default-scope {components|library} --path {src/{components|library}/{|atom,components,forms,tables,typography}}
+bit create react {COMPONENT_NAME} --scope {numudev.components|numudev.library} --path {src/{components|library}/{|atom,components,forms,tables,typography}}
 ```
 
 * react 
@@ -54,12 +53,6 @@ bit create react {COMPONENT_NAME} --default-scope {components|library} --path {s
 
 ```bash
 bit remove {COMPONENT_NAME}
-```
-
-### Remove a component (from remote)
-
-```bash
-bit delete {COMPONENT_NAME}
 ```
 
 ### Export your component

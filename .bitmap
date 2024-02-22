@@ -11,45 +11,10 @@
 {
     "analytics-drawer": {
         "name": "analytics-drawer",
-        "scope": "",
-        "version": "",
-        "defaultScope": "components",
+        "scope": "numudev.components",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "src/components/analytics-drawer",
-        "config": {
-            "bitdev.react/react-env@1.1.43": {},
-            "teambit.envs/envs": {
-                "env": "bitdev.react/react-env"
-            }
-        }
-    },
-    "divider": {
-        "name": "divider",
-        "scope": "",
-        "version": "",
-        "defaultScope": "library",
-        "mainFile": "index.ts",
-        "rootDir": "src/library/atom",
-        "config": {
-            "bitdev.react/react-env@1.1.43": {},
-            "teambit.envs/envs": {
-                "env": "bitdev.react/react-env"
-            }
-        }
-    },
-    "textarea": {
-        "name": "textarea",
-        "scope": "",
-        "version": "",
-        "defaultScope": "library",
-        "mainFile": "index.ts",
-        "rootDir": "src/library/form",
-        "config": {
-            "bitdev.react/react-env@1.1.43": {},
-            "teambit.envs/envs": {
-                "env": "bitdev.react/react-env"
-            }
-        }
+        "rootDir": "src/components/analytics-drawer"
     },
     "$schema-version": "17.0.0"
 }

@@ -120,6 +120,15 @@ importers:
       '@mdx-js/react':
         specifier: 1.6.22
         version: 1.6.22(react@18.2.0)
+      '@numudev/components.analytics-drawer':
+        specifier: workspace:*
+        version: file:src/components/analytics-drawer(@types/react@18.2.23)(react@18.2.0)
+      '@numudev/library.divider':
+        specifier: workspace:*
+        version: file:src/library/divider(@types/react@18.2.23)(react@18.2.0)
+      '@numudev/library.textarea':
+        specifier: workspace:*
+        version: file:src/library/forms(@types/react@18.2.23)(react@18.2.0)
       '@teambit/mdx.ui.mdx-scope-context':
         specifier: 1.0.7
         version: 1.0.7(@types/react@18.2.23)(react@18.2.0)
@@ -138,9 +147,6 @@ importers:
       '@typescript-eslint/parser':
         specifier: 6.19.1
         version: 6.19.1(eslint@8.56.0)(typescript@5.3.3)
-      '@ui/button':
-        specifier: workspace:*
-        version: file:src/ui/button(@types/react@18.2.23)(react@18.2.0)
       browserslist:
         specifier: 4.21.4
         version: 4.21.4
@@ -193,10 +199,196 @@ importers:
         specifier: ^5.88.2
         version: 5.90.3
     dependenciesMeta:
-      '@ui/button':
+      '@numudev/components.analytics-drawer':
+        injected: true
+      '@numudev/library.divider':
+        injected: true
+      '@numudev/library.textarea':
         injected: true
 
-  src/ui/button:
+  src/components/analytics-drawer:
+    dependencies:
+      '@apollo/client':
+        specifier: ^3.8.8
+        version: 3.9.5(@types/react@18.2.23)(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0)
+      '@mdx-js/mdx':
+        specifier: ^1.6.22
+        version: 1.6.22
+      '@mdx-js/react':
+        specifier: 1.6.22
+        version: 1.6.22(react@18.2.0)
+      '@teambit/mdx.ui.mdx-scope-context':
+        specifier: 1.0.7
+        version: 1.0.7(@types/react@18.2.23)(react@18.2.0)
+      '@types/jest':
+        specifier: ^29.2.2
+        version: 29.5.12
+      '@types/react':
+        specifier: 18.2.23
+        version: 18.2.23
+      '@types/react-dom':
+        specifier: ^18.2.5
+        version: 18.2.19
+      '@typescript-eslint/eslint-plugin':
+        specifier: 6.19.1
+        version: 6.19.1(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)(typescript@5.3.3)
+      '@typescript-eslint/parser':
+        specifier: 6.19.1
+        version: 6.19.1(eslint@8.56.0)(typescript@5.3.3)
+      browserslist:
+        specifier: 4.21.4
+        version: 4.21.4
+      eslint:
+        specifier: 8.56.0
+        version: 8.56.0
+      eslint-plugin-import:
+        specifier: 2.29.1
+        version: 2.29.1(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)
+      eslint-plugin-jest:
+        specifier: 27.6.3
+        version: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)(typescript@5.3.3)
+      eslint-plugin-jsx-a11y:
+        specifier: 6.8.0
+        version: 6.8.0(eslint@8.56.0)
+      eslint-plugin-mdx:
+        specifier: 3.1.5
+        version: 3.1.5(eslint@8.56.0)
+      eslint-plugin-react:
+        specifier: 7.33.2
+        version: 7.33.2(eslint@8.56.0)
+      eslint-plugin-react-hooks:
+        specifier: 4.6.0
+        version: 4.6.0(eslint@8.56.0)
+      graphql:
+        specifier: ^16.8.1
+        version: 16.8.1
+      jsdom:
+        specifier: ^23.0.1
+        version: 23.2.0
+      pino-pretty:
+        specifier: 4.5.0
+        version: 4.5.0
+      react:
+        specifier: ^18.0.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.0.0
+        version: 18.2.0(react@18.2.0)
+      react-router-dom:
+        specifier: ^6.16.0
+        version: 6.22.1(react-dom@18.2.0)(react@18.2.0)
+      sass:
+        specifier: ^1.69.5
+        version: 1.71.1
+      vitest:
+        specifier: 1.2.1
+        version: 1.2.1(jsdom@23.2.0)(sass@1.71.1)
+      webpack:
+        specifier: ^5.88.2
+        version: 5.90.3
+    devDependencies:
+      '@bitdev/react.react-env':
+        specifier: 1.1.43
+        version: 1.1.43(@teambit/legacy@node_modules+@teambit+legacy)(@testing-library/react@14.2.1)
+      '@testing-library/react':
+        specifier: ^14.2.1
+        version: 14.2.1(react-dom@18.2.0)(react@18.2.0)
+      '@types/testing-library__jest-dom':
+        specifier: ^5.9.5
+        version: 5.14.9
+
+  src/library/divider:
+    dependencies:
+      '@apollo/client':
+        specifier: ^3.8.8
+        version: 3.9.5(@types/react@18.2.23)(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0)
+      '@mdx-js/mdx':
+        specifier: ^1.6.22
+        version: 1.6.22
+      '@mdx-js/react':
+        specifier: 1.6.22
+        version: 1.6.22(react@18.2.0)
+      '@teambit/mdx.ui.mdx-scope-context':
+        specifier: 1.0.7
+        version: 1.0.7(@types/react@18.2.23)(react@18.2.0)
+      '@types/jest':
+        specifier: ^29.2.2
+        version: 29.5.12
+      '@types/react':
+        specifier: 18.2.23
+        version: 18.2.23
+      '@types/react-dom':
+        specifier: ^18.2.5
+        version: 18.2.19
+      '@typescript-eslint/eslint-plugin':
+        specifier: 6.19.1
+        version: 6.19.1(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)(typescript@5.3.3)
+      '@typescript-eslint/parser':
+        specifier: 6.19.1
+        version: 6.19.1(eslint@8.56.0)(typescript@5.3.3)
+      browserslist:
+        specifier: 4.21.4
+        version: 4.21.4
+      eslint:
+        specifier: 8.56.0
+        version: 8.56.0
+      eslint-plugin-import:
+        specifier: 2.29.1
+        version: 2.29.1(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)
+      eslint-plugin-jest:
+        specifier: 27.6.3
+        version: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)(typescript@5.3.3)
+      eslint-plugin-jsx-a11y:
+        specifier: 6.8.0
+        version: 6.8.0(eslint@8.56.0)
+      eslint-plugin-mdx:
+        specifier: 3.1.5
+        version: 3.1.5(eslint@8.56.0)
+      eslint-plugin-react:
+        specifier: 7.33.2
+        version: 7.33.2(eslint@8.56.0)
+      eslint-plugin-react-hooks:
+        specifier: 4.6.0
+        version: 4.6.0(eslint@8.56.0)
+      graphql:
+        specifier: ^16.8.1
+        version: 16.8.1
+      jsdom:
+        specifier: ^23.0.1
+        version: 23.2.0
+      pino-pretty:
+        specifier: 4.5.0
+        version: 4.5.0
+      react:
+        specifier: ^18.0.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.0.0
+        version: 18.2.0(react@18.2.0)
+      react-router-dom:
+        specifier: ^6.16.0
+        version: 6.22.1(react-dom@18.2.0)(react@18.2.0)
+      sass:
+        specifier: ^1.69.5
+        version: 1.71.1
+      vitest:
+        specifier: 1.2.1
+        version: 1.2.1(jsdom@23.2.0)(sass@1.71.1)
+      webpack:
+        specifier: ^5.88.2
+        version: 5.90.3
+    devDependencies:
+      '@bitdev/react.react-env':
+        specifier: 1.1.43
+        version: 1.1.43(@teambit/legacy@node_modules+@teambit+legacy)(@testing-library/react@14.2.1)
+      '@testing-library/react':
+        specifier: ^14.2.1
+        version: 14.2.1(react-dom@18.2.0)(react@18.2.0)
+      '@types/testing-library__jest-dom':
+        specifier: ^5.9.5
+        version: 5.14.9
+
+  src/library/forms:
     dependencies:
       '@apollo/client':
         specifier: ^3.8.8
@@ -461,7 +653,7 @@ packages:
       '@babel/parser': 7.23.9
       '@babel/template': 7.23.9
       '@babel/traverse': 7.23.9
-      '@babel/types': 7.22.3
+      '@babel/types': 7.23.9
       convert-source-map: 1.9.0
       debug: 4.3.4
       gensync: 1.0.0-beta.2
@@ -622,23 +814,6 @@ packages:
         optional: true
     dependencies:
       '@babel/core': 7.20.2
-      '@babel/helper-compilation-targets': 7.23.6
-      '@babel/helper-plugin-utils': 7.22.5
-      debug: 4.3.4
-      lodash.debounce: 4.0.8
-      resolve: 1.22.8
-    transitivePeerDependencies:
-      - supports-color
-
-  /@babel/helper-define-polyfill-provider@0.4.4(@babel/core@7.23.9):
-    resolution: {integrity: sha512-QcJMILQCu2jm5TFPGA3lCpJJTeEP+mqeXooG/NZbg/h5FTFi6V0+99ahlRsW8/kRLyb24LZVCCiclDedhLKcBA==}
-    peerDependencies:
-      '@babel/core': '*'
-    peerDependenciesMeta:
-      '@babel/core':
-        optional: true
-    dependencies:
-      '@babel/core': 7.23.9
       '@babel/helper-compilation-targets': 7.23.6
       '@babel/helper-plugin-utils': 7.22.5
       debug: 4.3.4
@@ -974,7 +1149,7 @@ packages:
       '@babel/helper-skip-transparent-expression-wrappers': 7.22.5
       '@babel/plugin-transform-optional-chaining': 7.23.4(@babel/core@7.23.9)
 
-  /@babel/plugin-bugfix-v8-static-class-fields-redefine-readonly@7.23.7:
+  /@babel/plugin-bugfix-v8-static-class-fields-redefine-readonly@7.23.7(@babel/core@7.23.9):
     resolution: {integrity: sha512-LlRT7HgaifEpQA1ZgLVOIJZZFVPWN5iReq/7/JixwBtwcoeVGDBD53ZV28rrsLYOZs1Y/EHhA8N/Z6aazHR8cw==}
     engines: {node: '>=6.9.0'}
     peerDependencies:
@@ -983,6 +1158,7 @@ packages:
       '@babel/core':
         optional: true
     dependencies:
+      '@babel/core': 7.23.9
       '@babel/helper-environment-visitor': 7.22.20
       '@babel/helper-plugin-utils': 7.22.5
 
@@ -1068,7 +1244,7 @@ packages:
         optional: true
     dependencies:
       '@babel/core': 7.11.6
-      '@babel/helper-plugin-utils': 7.10.4
+      '@babel/helper-plugin-utils': 7.22.5
       '@babel/plugin-syntax-object-rest-spread': 7.8.3(@babel/core@7.11.6)
       '@babel/plugin-transform-parameters': 7.23.3(@babel/core@7.11.6)
 
@@ -1184,6 +1360,17 @@ packages:
         optional: true
     dependencies:
       '@babel/core': 7.20.2
+      '@babel/helper-plugin-utils': 7.22.5
+
+  /@babel/plugin-syntax-bigint@7.8.3(@babel/core@7.23.9):
+    resolution: {integrity: sha512-wnTnFlG+YxQm3vDxpGE57Pj0srRU4sHE/mDkt1qv2YJJSeUAec2ma4WLUnUPeKjyrfntVwe/N6dCXpU+zL3Npg==}
+    peerDependencies:
+      '@babel/core': '*'
+    peerDependenciesMeta:
+      '@babel/core':
+        optional: true
+    dependencies:
+      '@babel/core': 7.23.9
       '@babel/helper-plugin-utils': 7.22.5
 
   /@babel/plugin-syntax-class-properties@7.12.13(@babel/core@7.20.2):
@@ -3295,99 +3482,6 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /@babel/preset-env@7.22.15(@babel/core@7.23.9):
-    resolution: {integrity: sha512-tZFHr54GBkHk6hQuVA8w4Fmq+MSPsfvMG0vPnOYyTnJpyfMqybL8/MbNCPRT9zc2KBO2pe4tq15g6Uno4Jpoag==}
-    engines: {node: '>=6.9.0'}
-    peerDependencies:
-      '@babel/core': '*'
-    peerDependenciesMeta:
-      '@babel/core':
-        optional: true
-    dependencies:
-      '@babel/compat-data': 7.23.5
-      '@babel/core': 7.23.9
-      '@babel/helper-compilation-targets': 7.23.6
-      '@babel/helper-plugin-utils': 7.22.5
-      '@babel/helper-validator-option': 7.23.5
-      '@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression': 7.23.3(@babel/core@7.23.9)
-      '@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining': 7.23.3(@babel/core@7.23.9)
-      '@babel/plugin-proposal-private-property-in-object': 7.21.0-placeholder-for-preset-env.2(@babel/core@7.23.9)
-      '@babel/plugin-syntax-async-generators': 7.8.4(@babel/core@7.23.9)
-      '@babel/plugin-syntax-class-properties': 7.12.13(@babel/core@7.23.9)
-      '@babel/plugin-syntax-class-static-block': 7.14.5(@babel/core@7.23.9)
-      '@babel/plugin-syntax-dynamic-import': 7.8.3(@babel/core@7.23.9)
-      '@babel/plugin-syntax-export-namespace-from': 7.8.3(@babel/core@7.23.9)
-      '@babel/plugin-syntax-import-assertions': 7.23.3(@babel/core@7.23.9)
-      '@babel/plugin-syntax-import-attributes': 7.23.3(@babel/core@7.23.9)
-      '@babel/plugin-syntax-import-meta': 7.10.4(@babel/core@7.23.9)
-      '@babel/plugin-syntax-json-strings': 7.8.3(@babel/core@7.23.9)
-      '@babel/plugin-syntax-logical-assignment-operators': 7.10.4(@babel/core@7.23.9)
-      '@babel/plugin-syntax-nullish-coalescing-operator': 7.8.3(@babel/core@7.23.9)
-      '@babel/plugin-syntax-numeric-separator': 7.10.4(@babel/core@7.23.9)
-      '@babel/plugin-syntax-object-rest-spread': 7.8.3(@babel/core@7.23.9)
-      '@babel/plugin-syntax-optional-catch-binding': 7.8.3(@babel/core@7.23.9)
-      '@babel/plugin-syntax-optional-chaining': 7.8.3(@babel/core@7.23.9)
-      '@babel/plugin-syntax-private-property-in-object': 7.14.5(@babel/core@7.23.9)
-      '@babel/plugin-syntax-top-level-await': 7.14.5(@babel/core@7.23.9)
-      '@babel/plugin-syntax-unicode-sets-regex': 7.18.6(@babel/core@7.23.9)
-      '@babel/plugin-transform-arrow-functions': 7.23.3(@babel/core@7.23.9)
-      '@babel/plugin-transform-async-generator-functions': 7.23.9(@babel/core@7.23.9)
-      '@babel/plugin-transform-async-to-generator': 7.23.3(@babel/core@7.23.9)
-      '@babel/plugin-transform-block-scoped-functions': 7.23.3(@babel/core@7.23.9)
-      '@babel/plugin-transform-block-scoping': 7.23.4(@babel/core@7.23.9)
-      '@babel/plugin-transform-class-properties': 7.23.3(@babel/core@7.23.9)
-      '@babel/plugin-transform-class-static-block': 7.23.4(@babel/core@7.23.9)
-      '@babel/plugin-transform-classes': 7.23.8(@babel/core@7.23.9)
-      '@babel/plugin-transform-computed-properties': 7.23.3(@babel/core@7.23.9)
-      '@babel/plugin-transform-destructuring': 7.23.3(@babel/core@7.23.9)
-      '@babel/plugin-transform-dotall-regex': 7.23.3(@babel/core@7.23.9)
-      '@babel/plugin-transform-duplicate-keys': 7.23.3(@babel/core@7.23.9)
-      '@babel/plugin-transform-dynamic-import': 7.23.4(@babel/core@7.23.9)
-      '@babel/plugin-transform-exponentiation-operator': 7.23.3(@babel/core@7.23.9)
-      '@babel/plugin-transform-export-namespace-from': 7.23.4(@babel/core@7.23.9)
-      '@babel/plugin-transform-for-of': 7.23.6(@babel/core@7.23.9)
-      '@babel/plugin-transform-function-name': 7.23.3(@babel/core@7.23.9)
-      '@babel/plugin-transform-json-strings': 7.23.4(@babel/core@7.23.9)
-      '@babel/plugin-transform-literals': 7.23.3(@babel/core@7.23.9)
-      '@babel/plugin-transform-logical-assignment-operators': 7.23.4(@babel/core@7.23.9)
-      '@babel/plugin-transform-member-expression-literals': 7.23.3(@babel/core@7.23.9)
-      '@babel/plugin-transform-modules-amd': 7.23.3(@babel/core@7.23.9)
-      '@babel/plugin-transform-modules-commonjs': 7.23.3(@babel/core@7.23.9)
-      '@babel/plugin-transform-modules-systemjs': 7.23.9(@babel/core@7.23.9)
-      '@babel/plugin-transform-modules-umd': 7.23.3(@babel/core@7.23.9)
-      '@babel/plugin-transform-named-capturing-groups-regex': 7.22.5(@babel/core@7.23.9)
-      '@babel/plugin-transform-new-target': 7.23.3(@babel/core@7.23.9)
-      '@babel/plugin-transform-nullish-coalescing-operator': 7.23.4(@babel/core@7.23.9)
-      '@babel/plugin-transform-numeric-separator': 7.23.4(@babel/core@7.23.9)
-      '@babel/plugin-transform-object-rest-spread': 7.23.4(@babel/core@7.23.9)
-      '@babel/plugin-transform-object-super': 7.23.3(@babel/core@7.23.9)
-      '@babel/plugin-transform-optional-catch-binding': 7.23.4(@babel/core@7.23.9)
-      '@babel/plugin-transform-optional-chaining': 7.23.4(@babel/core@7.23.9)
-      '@babel/plugin-transform-parameters': 7.23.3(@babel/core@7.23.9)
-      '@babel/plugin-transform-private-methods': 7.23.3(@babel/core@7.23.9)
-      '@babel/plugin-transform-private-property-in-object': 7.23.4(@babel/core@7.23.9)
-      '@babel/plugin-transform-property-literals': 7.23.3(@babel/core@7.23.9)
-      '@babel/plugin-transform-regenerator': 7.23.3(@babel/core@7.23.9)
-      '@babel/plugin-transform-reserved-words': 7.23.3(@babel/core@7.23.9)
-      '@babel/plugin-transform-shorthand-properties': 7.23.3(@babel/core@7.23.9)
-      '@babel/plugin-transform-spread': 7.23.3(@babel/core@7.23.9)
-      '@babel/plugin-transform-sticky-regex': 7.23.3(@babel/core@7.23.9)
-      '@babel/plugin-transform-template-literals': 7.23.3(@babel/core@7.23.9)
-      '@babel/plugin-transform-typeof-symbol': 7.23.3(@babel/core@7.23.9)
-      '@babel/plugin-transform-unicode-escapes': 7.23.3(@babel/core@7.23.9)
-      '@babel/plugin-transform-unicode-property-regex': 7.23.3(@babel/core@7.23.9)
-      '@babel/plugin-transform-unicode-regex': 7.23.3(@babel/core@7.23.9)
-      '@babel/plugin-transform-unicode-sets-regex': 7.23.3(@babel/core@7.23.9)
-      '@babel/preset-modules': 0.1.6-no-external-plugins(@babel/core@7.23.9)
-      '@babel/types': 7.23.9
-      babel-plugin-polyfill-corejs2: 0.4.8(@babel/core@7.23.9)
-      babel-plugin-polyfill-corejs3: 0.8.7(@babel/core@7.23.9)
-      babel-plugin-polyfill-regenerator: 0.5.5(@babel/core@7.23.9)
-      core-js-compat: 3.36.0
-      semver: 6.3.1
-    transitivePeerDependencies:
-      - supports-color
-
   /@babel/preset-env@7.23.9:
     resolution: {integrity: sha512-3kBGTNBBk9DQiPoXYS0g0BYlwTQYUTifqgKTjxUwEUkduRT2QOa0FPGBJ+NROQhGyYO5BuTJwGvBnqKDykac6A==}
     engines: {node: '>=6.9.0'}
@@ -3403,7 +3497,7 @@ packages:
       '@babel/helper-validator-option': 7.23.5
       '@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression': 7.23.3(@babel/core@7.20.2)
       '@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining': 7.23.3(@babel/core@7.20.2)
-      '@babel/plugin-bugfix-v8-static-class-fields-redefine-readonly': 7.23.7
+      '@babel/plugin-bugfix-v8-static-class-fields-redefine-readonly': 7.23.7(@babel/core@7.23.9)
       '@babel/plugin-proposal-private-property-in-object': 7.21.0-placeholder-for-preset-env.2(@babel/core@7.20.2)
       '@babel/plugin-syntax-async-generators': 7.8.4(@babel/core@7.20.2)
       '@babel/plugin-syntax-class-properties': 7.12.13(@babel/core@7.20.2)
@@ -3475,6 +3569,99 @@ packages:
       babel-plugin-polyfill-corejs2: 0.4.8(@babel/core@7.20.2)
       babel-plugin-polyfill-corejs3: 0.9.0
       babel-plugin-polyfill-regenerator: 0.5.5(@babel/core@7.20.2)
+      core-js-compat: 3.36.0
+      semver: 6.3.1
+    transitivePeerDependencies:
+      - supports-color
+
+  /@babel/preset-env@7.23.9(@babel/core@7.23.9):
+    resolution: {integrity: sha512-3kBGTNBBk9DQiPoXYS0g0BYlwTQYUTifqgKTjxUwEUkduRT2QOa0FPGBJ+NROQhGyYO5BuTJwGvBnqKDykac6A==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': '*'
+    peerDependenciesMeta:
+      '@babel/core':
+        optional: true
+    dependencies:
+      '@babel/compat-data': 7.23.5
+      '@babel/core': 7.23.9
+      '@babel/helper-compilation-targets': 7.23.6
+      '@babel/helper-plugin-utils': 7.22.5
+      '@babel/helper-validator-option': 7.23.5
+      '@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression': 7.23.3(@babel/core@7.23.9)
+      '@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining': 7.23.3(@babel/core@7.23.9)
+      '@babel/plugin-bugfix-v8-static-class-fields-redefine-readonly': 7.23.7(@babel/core@7.23.9)
+      '@babel/plugin-proposal-private-property-in-object': 7.21.0-placeholder-for-preset-env.2(@babel/core@7.23.9)
+      '@babel/plugin-syntax-async-generators': 7.8.4(@babel/core@7.23.9)
+      '@babel/plugin-syntax-class-properties': 7.12.13(@babel/core@7.23.9)
+      '@babel/plugin-syntax-class-static-block': 7.14.5(@babel/core@7.23.9)
+      '@babel/plugin-syntax-dynamic-import': 7.8.3(@babel/core@7.23.9)
+      '@babel/plugin-syntax-export-namespace-from': 7.8.3(@babel/core@7.23.9)
+      '@babel/plugin-syntax-import-assertions': 7.23.3(@babel/core@7.23.9)
+      '@babel/plugin-syntax-import-attributes': 7.23.3(@babel/core@7.23.9)
+      '@babel/plugin-syntax-import-meta': 7.10.4(@babel/core@7.23.9)
+      '@babel/plugin-syntax-json-strings': 7.8.3(@babel/core@7.23.9)
+      '@babel/plugin-syntax-logical-assignment-operators': 7.10.4(@babel/core@7.23.9)
+      '@babel/plugin-syntax-nullish-coalescing-operator': 7.8.3(@babel/core@7.23.9)
+      '@babel/plugin-syntax-numeric-separator': 7.10.4(@babel/core@7.23.9)
+      '@babel/plugin-syntax-object-rest-spread': 7.8.3(@babel/core@7.23.9)
+      '@babel/plugin-syntax-optional-catch-binding': 7.8.3(@babel/core@7.23.9)
+      '@babel/plugin-syntax-optional-chaining': 7.8.3(@babel/core@7.23.9)
+      '@babel/plugin-syntax-private-property-in-object': 7.14.5(@babel/core@7.23.9)
+      '@babel/plugin-syntax-top-level-await': 7.14.5(@babel/core@7.23.9)
+      '@babel/plugin-syntax-unicode-sets-regex': 7.18.6(@babel/core@7.23.9)
+      '@babel/plugin-transform-arrow-functions': 7.23.3(@babel/core@7.23.9)
+      '@babel/plugin-transform-async-generator-functions': 7.23.9(@babel/core@7.23.9)
+      '@babel/plugin-transform-async-to-generator': 7.23.3(@babel/core@7.23.9)
+      '@babel/plugin-transform-block-scoped-functions': 7.23.3(@babel/core@7.23.9)
+      '@babel/plugin-transform-block-scoping': 7.23.4(@babel/core@7.23.9)
+      '@babel/plugin-transform-class-properties': 7.23.3(@babel/core@7.23.9)
+      '@babel/plugin-transform-class-static-block': 7.23.4(@babel/core@7.23.9)
+      '@babel/plugin-transform-classes': 7.23.8(@babel/core@7.23.9)
+      '@babel/plugin-transform-computed-properties': 7.23.3(@babel/core@7.23.9)
+      '@babel/plugin-transform-destructuring': 7.23.3(@babel/core@7.23.9)
+      '@babel/plugin-transform-dotall-regex': 7.23.3(@babel/core@7.23.9)
+      '@babel/plugin-transform-duplicate-keys': 7.23.3(@babel/core@7.23.9)
+      '@babel/plugin-transform-dynamic-import': 7.23.4(@babel/core@7.23.9)
+      '@babel/plugin-transform-exponentiation-operator': 7.23.3(@babel/core@7.23.9)
+      '@babel/plugin-transform-export-namespace-from': 7.23.4(@babel/core@7.23.9)
+      '@babel/plugin-transform-for-of': 7.23.6(@babel/core@7.23.9)
+      '@babel/plugin-transform-function-name': 7.23.3(@babel/core@7.23.9)
+      '@babel/plugin-transform-json-strings': 7.23.4(@babel/core@7.23.9)
+      '@babel/plugin-transform-literals': 7.23.3(@babel/core@7.23.9)
+      '@babel/plugin-transform-logical-assignment-operators': 7.23.4(@babel/core@7.23.9)
+      '@babel/plugin-transform-member-expression-literals': 7.23.3(@babel/core@7.23.9)
+      '@babel/plugin-transform-modules-amd': 7.23.3(@babel/core@7.23.9)
+      '@babel/plugin-transform-modules-commonjs': 7.23.3(@babel/core@7.23.9)
+      '@babel/plugin-transform-modules-systemjs': 7.23.9(@babel/core@7.23.9)
+      '@babel/plugin-transform-modules-umd': 7.23.3(@babel/core@7.23.9)
+      '@babel/plugin-transform-named-capturing-groups-regex': 7.22.5(@babel/core@7.23.9)
+      '@babel/plugin-transform-new-target': 7.23.3(@babel/core@7.23.9)
+      '@babel/plugin-transform-nullish-coalescing-operator': 7.23.4(@babel/core@7.23.9)
+      '@babel/plugin-transform-numeric-separator': 7.23.4(@babel/core@7.23.9)
+      '@babel/plugin-transform-object-rest-spread': 7.23.4(@babel/core@7.23.9)
+      '@babel/plugin-transform-object-super': 7.23.3(@babel/core@7.23.9)
+      '@babel/plugin-transform-optional-catch-binding': 7.23.4(@babel/core@7.23.9)
+      '@babel/plugin-transform-optional-chaining': 7.23.4(@babel/core@7.23.9)
+      '@babel/plugin-transform-parameters': 7.23.3(@babel/core@7.23.9)
+      '@babel/plugin-transform-private-methods': 7.23.3(@babel/core@7.23.9)
+      '@babel/plugin-transform-private-property-in-object': 7.23.4(@babel/core@7.23.9)
+      '@babel/plugin-transform-property-literals': 7.23.3(@babel/core@7.23.9)
+      '@babel/plugin-transform-regenerator': 7.23.3(@babel/core@7.23.9)
+      '@babel/plugin-transform-reserved-words': 7.23.3(@babel/core@7.23.9)
+      '@babel/plugin-transform-shorthand-properties': 7.23.3(@babel/core@7.23.9)
+      '@babel/plugin-transform-spread': 7.23.3(@babel/core@7.23.9)
+      '@babel/plugin-transform-sticky-regex': 7.23.3(@babel/core@7.23.9)
+      '@babel/plugin-transform-template-literals': 7.23.3(@babel/core@7.23.9)
+      '@babel/plugin-transform-typeof-symbol': 7.23.3(@babel/core@7.23.9)
+      '@babel/plugin-transform-unicode-escapes': 7.23.3(@babel/core@7.23.9)
+      '@babel/plugin-transform-unicode-property-regex': 7.23.3(@babel/core@7.23.9)
+      '@babel/plugin-transform-unicode-regex': 7.23.3(@babel/core@7.23.9)
+      '@babel/plugin-transform-unicode-sets-regex': 7.23.3(@babel/core@7.23.9)
+      '@babel/preset-modules': 0.1.6-no-external-plugins(@babel/core@7.23.9)
+      babel-plugin-polyfill-corejs2: 0.4.8(@babel/core@7.23.9)
+      babel-plugin-polyfill-corejs3: 0.9.0(@babel/core@7.23.9)
+      babel-plugin-polyfill-regenerator: 0.5.5(@babel/core@7.23.9)
       core-js-compat: 3.36.0
       semver: 6.3.1
     transitivePeerDependencies:
@@ -4410,7 +4597,7 @@ packages:
     resolution: {integrity: sha512-ok/BTPFzFKVMwO5eOHRrvnBVHdRy9IrsrW1GpMaQ9MCnilNLXQKmAX8s1YXDFaai9xJpac2ySzV0YeRRECr2Vw==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
-      '@babel/core': 7.20.2
+      '@babel/core': 7.23.9
       '@jest/types': 29.6.3
       '@jridgewell/trace-mapping': 0.3.22
       babel-plugin-istanbul: 6.1.1
@@ -4967,7 +5154,7 @@ packages:
     dependencies:
       '@babel/core': 7.23.9
       '@babel/plugin-transform-react-constant-elements': 7.23.3(@babel/core@7.23.9)
-      '@babel/preset-env': 7.22.15(@babel/core@7.23.9)
+      '@babel/preset-env': 7.23.9(@babel/core@7.23.9)
       '@babel/preset-react': 7.22.15(@babel/core@7.23.9)
       '@babel/preset-typescript': 7.23.3(@babel/core@7.23.9)
       '@svgr/core': 8.1.0(typescript@5.3.3)
@@ -5073,7 +5260,7 @@ packages:
       react-dom:
         optional: true
     dependencies:
-      classnames: 2.2.6
+      classnames: 2.3.1
       core-js: 3.36.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -5089,7 +5276,7 @@ packages:
       react-dom:
         optional: true
     dependencies:
-      classnames: 2.2.6
+      classnames: 2.3.1
       core-js: 3.36.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -5106,7 +5293,7 @@ packages:
         optional: true
     dependencies:
       '@teambit/base-ui.elements.dots-loader': 1.0.3(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.2.6
+      classnames: 2.3.1
       core-js: 3.36.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -5122,7 +5309,7 @@ packages:
       react-dom:
         optional: true
     dependencies:
-      classnames: 2.2.6
+      classnames: 2.3.1
       core-js: 3.36.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -5154,7 +5341,7 @@ packages:
         optional: true
     dependencies:
       '@teambit/base-ui.layout.breakpoints': 1.0.0(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.2.6
+      classnames: 2.3.1
       core-js: 3.36.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -5219,7 +5406,7 @@ packages:
       '@teambit/base-ui.css-components.elevation': 1.0.0(react-dom@18.2.0)(react@18.2.0)
       '@teambit/base-ui.css-components.roundness': 1.0.0(react-dom@18.2.0)(react@18.2.0)
       '@teambit/base-ui.surfaces.background': 1.0.1(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.2.6
+      classnames: 2.3.1
       core-js: 3.36.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -5236,7 +5423,7 @@ packages:
         optional: true
     dependencies:
       '@teambit/base-ui.surfaces.split-pane.splitter': 1.0.0(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.2.6
+      classnames: 2.3.1
       core-js: 3.36.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -5268,7 +5455,7 @@ packages:
         optional: true
     dependencies:
       '@teambit/base-ui.surfaces.split-pane.layout': 1.0.0(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.2.6
+      classnames: 2.3.1
       core-js: 3.36.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -5287,7 +5474,7 @@ packages:
       '@teambit/base-ui.surfaces.split-pane.layout': 1.0.0(react-dom@18.2.0)(react@18.2.0)
       '@teambit/base-ui.surfaces.split-pane.pane': 1.0.0(react-dom@18.2.0)(react@18.2.0)
       '@teambit/base-ui.surfaces.split-pane.splitter': 1.0.0(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.2.6
+      classnames: 2.3.1
       core-js: 3.36.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -5303,7 +5490,7 @@ packages:
       react-dom:
         optional: true
     dependencies:
-      classnames: 2.2.6
+      classnames: 2.3.1
       core-js: 3.36.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -5336,7 +5523,7 @@ packages:
     dependencies:
       '@teambit/base-ui.text.text-sizes': 1.0.0(react-dom@18.2.0)(react@18.2.0)
       '@teambit/base-ui.theme.sizes': 1.0.0(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.2.6
+      classnames: 2.3.1
       core-js: 3.36.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -5367,7 +5554,7 @@ packages:
       react-dom:
         optional: true
     dependencies:
-      classnames: 2.2.6
+      classnames: 2.3.1
       core-js: 3.36.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -5870,7 +6057,7 @@ packages:
     dependencies:
       '@teambit/base-ui.elements.icon': 1.0.0(react-dom@18.2.0)(react@18.2.0)
       '@teambit/base-ui.input.button': 1.0.5(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.2.6
+      classnames: 2.3.1
       core-js: 3.36.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -5955,7 +6142,7 @@ packages:
         optional: true
     dependencies:
       '@teambit/documenter.ui.linked-heading': 4.1.8(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.2.6
+      classnames: 2.3.1
       core-js: 3.36.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -6027,7 +6214,7 @@ packages:
       react-dom:
         optional: true
     dependencies:
-      classnames: 2.2.6
+      classnames: 2.3.1
       core-js: 3.36.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -6044,7 +6231,7 @@ packages:
         optional: true
     dependencies:
       '@teambit/evangelist.elements.icon': 1.0.5(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.2.6
+      classnames: 2.3.1
       core-js: 3.36.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -6061,7 +6248,7 @@ packages:
         optional: true
     dependencies:
       '@teambit/evangelist.elements.icon': 1.0.5(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.2.6
+      classnames: 2.3.1
       core-js: 3.36.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -6077,7 +6264,7 @@ packages:
       react-dom:
         optional: true
     dependencies:
-      classnames: 2.2.6
+      classnames: 2.3.1
       core-js: 3.36.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -6093,7 +6280,7 @@ packages:
       react-dom:
         optional: true
     dependencies:
-      classnames: 2.2.6
+      classnames: 2.3.1
       core-js: 3.36.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -6110,7 +6297,7 @@ packages:
         optional: true
     dependencies:
       '@teambit/documenter.ui.copied-message': 4.1.6(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.2.6
+      classnames: 2.3.1
       copy-to-clipboard: 3.3.3
       core-js: 3.36.0
       react: 18.2.0
@@ -6128,7 +6315,7 @@ packages:
       react-dom:
         optional: true
     dependencies:
-      classnames: 2.2.6
+      classnames: 2.3.1
       core-js: 3.36.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -6145,7 +6332,7 @@ packages:
         optional: true
     dependencies:
       '@teambit/base-ui.text.heading': 1.0.4(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.2.6
+      classnames: 2.3.1
       core-js: 3.36.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -6162,7 +6349,7 @@ packages:
         optional: true
     dependencies:
       '@teambit/base-ui.text.heading': 1.0.4(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.2.6
+      classnames: 2.3.1
       core-js: 3.36.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -6178,7 +6365,7 @@ packages:
       react-dom:
         optional: true
     dependencies:
-      classnames: 2.2.6
+      classnames: 2.3.1
       core-js: 3.36.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -6194,7 +6381,7 @@ packages:
       react-dom:
         optional: true
     dependencies:
-      classnames: 2.2.6
+      classnames: 2.3.1
       core-js: 3.36.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -6210,7 +6397,7 @@ packages:
       react-dom:
         optional: true
     dependencies:
-      classnames: 2.2.6
+      classnames: 2.3.1
       core-js: 3.36.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -6228,7 +6415,7 @@ packages:
     dependencies:
       '@teambit/documenter.ui.anchor': 4.0.6(react-dom@18.2.0)(react@18.2.0)
       '@teambit/documenter.ui.heading': 4.1.4(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.2.6
+      classnames: 2.3.1
       core-js: 3.36.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -6246,7 +6433,7 @@ packages:
     dependencies:
       '@teambit/documenter.ui.anchor': 4.0.8(react-dom@18.2.0)(react@18.2.0)
       '@teambit/documenter.ui.heading': 4.1.6(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.2.6
+      classnames: 2.3.1
       core-js: 3.36.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -6262,7 +6449,7 @@ packages:
       react-dom:
         optional: true
     dependencies:
-      classnames: 2.2.6
+      classnames: 2.3.1
       core-js: 3.36.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -6280,7 +6467,7 @@ packages:
     dependencies:
       '@teambit/base-ui.text.paragraph': 1.0.3(react-dom@18.2.0)(react@18.2.0)
       '@teambit/base-ui.theme.sizes': 1.0.0(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.2.6
+      classnames: 2.3.1
       core-js: 3.36.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -6314,7 +6501,7 @@ packages:
       react-dom:
         optional: true
     dependencies:
-      classnames: 2.2.6
+      classnames: 2.3.1
       core-js: 3.36.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -6330,7 +6517,7 @@ packages:
       react-dom:
         optional: true
     dependencies:
-      classnames: 2.2.6
+      classnames: 2.3.1
       core-js: 3.36.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -6346,7 +6533,7 @@ packages:
       react-dom:
         optional: true
     dependencies:
-      classnames: 2.2.6
+      classnames: 2.3.1
       core-js: 3.36.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -6416,7 +6603,7 @@ packages:
       react-dom:
         optional: true
     dependencies:
-      classnames: 2.2.6
+      classnames: 2.3.1
       core-js: 3.36.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -6432,7 +6619,7 @@ packages:
       react-dom:
         optional: true
     dependencies:
-      classnames: 2.2.6
+      classnames: 2.3.1
       core-js: 3.36.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -6448,7 +6635,7 @@ packages:
       react-dom:
         optional: true
     dependencies:
-      classnames: 2.2.6
+      classnames: 2.3.1
       core-js: 3.36.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -6479,7 +6666,7 @@ packages:
       react-dom:
         optional: true
     dependencies:
-      classnames: 2.2.6
+      classnames: 2.3.1
       core-js: 3.36.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -7536,7 +7723,7 @@ packages:
     engines: {node: '>=8', npm: '>=6', yarn: '>=1'}
     dependencies:
       '@adobe/css-tools': 4.3.3
-      '@babel/runtime': 7.20.0
+      '@babel/runtime': 7.23.9
       '@types/testing-library__jest-dom': 5.14.9
       aria-query: 5.3.0
       chalk: 3.0.0
@@ -8646,7 +8833,7 @@ packages:
     dependencies:
       dequal: 2.0.3
 
-  /babel-jest@29.7.0(@babel/core@7.20.2):
+  /babel-jest@29.7.0(@babel/core@7.23.9):
     resolution: {integrity: sha512-BrvGY3xZSwEcCzKvKsCi2GgHqDqsYkOP4/by5xCgIwGXQxIEh+8ew3gmrE1y7XRR6LHZIj6yLYnUi/mm2KXKBg==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     peerDependencies:
@@ -8655,11 +8842,11 @@ packages:
       '@babel/core':
         optional: true
     dependencies:
-      '@babel/core': 7.20.2
+      '@babel/core': 7.23.9
       '@jest/transform': 29.7.0
       '@types/babel__core': 7.20.5
       babel-plugin-istanbul: 6.1.1
-      babel-preset-jest: 29.6.3(@babel/core@7.20.2)
+      babel-preset-jest: 29.6.3(@babel/core@7.23.9)
       chalk: 4.1.2
       graceful-fs: 4.2.11
       slash: 3.0.0
@@ -8757,7 +8944,7 @@ packages:
     resolution: {integrity: sha512-Cg7TFGpIr01vOQNODXOOaGz2NpCU5gl8x1qJFbb6hbZxR7XrcE2vtbAsTAbJ7/xwJtUuJEw8K8Zr/AE0LHlesg==}
     engines: {node: '>=10', npm: '>=6'}
     dependencies:
-      '@babel/runtime': 7.20.0
+      '@babel/runtime': 7.23.9
       cosmiconfig: 7.1.0
       resolve: 1.22.8
 
@@ -8801,20 +8988,6 @@ packages:
     dependencies:
       '@babel/core': 7.20.2
       '@babel/helper-define-polyfill-provider': 0.4.4(@babel/core@7.20.2)
-      core-js-compat: 3.36.0
-    transitivePeerDependencies:
-      - supports-color
-
-  /babel-plugin-polyfill-corejs3@0.8.7(@babel/core@7.23.9):
-    resolution: {integrity: sha512-KyDvZYxAzkC0Aj2dAPyDzi2Ym15e5JKZSK+maI7NAwSqofvuFglbSsxE7wUOvTg9oFVnHMzVzBKcqEb4PJgtOA==}
-    peerDependencies:
-      '@babel/core': '*'
-    peerDependenciesMeta:
-      '@babel/core':
-        optional: true
-    dependencies:
-      '@babel/core': 7.23.9
-      '@babel/helper-define-polyfill-provider': 0.4.4(@babel/core@7.23.9)
       core-js-compat: 3.36.0
     transitivePeerDependencies:
       - supports-color
@@ -8911,6 +9084,28 @@ packages:
       '@babel/plugin-syntax-optional-chaining': 7.8.3(@babel/core@7.20.2)
       '@babel/plugin-syntax-top-level-await': 7.14.5(@babel/core@7.20.2)
 
+  /babel-preset-current-node-syntax@1.0.1(@babel/core@7.23.9):
+    resolution: {integrity: sha512-M7LQ0bxarkxQoN+vz5aJPsLBn77n8QgTFmo8WK0/44auK2xlCXrYcUxHFxgU7qW5Yzw/CjmLRK2uJzaCd7LvqQ==}
+    peerDependencies:
+      '@babel/core': '*'
+    peerDependenciesMeta:
+      '@babel/core':
+        optional: true
+    dependencies:
+      '@babel/core': 7.23.9
+      '@babel/plugin-syntax-async-generators': 7.8.4(@babel/core@7.23.9)
+      '@babel/plugin-syntax-bigint': 7.8.3(@babel/core@7.23.9)
+      '@babel/plugin-syntax-class-properties': 7.12.13(@babel/core@7.23.9)
+      '@babel/plugin-syntax-import-meta': 7.10.4(@babel/core@7.23.9)
+      '@babel/plugin-syntax-json-strings': 7.8.3(@babel/core@7.23.9)
+      '@babel/plugin-syntax-logical-assignment-operators': 7.10.4(@babel/core@7.23.9)
+      '@babel/plugin-syntax-nullish-coalescing-operator': 7.8.3(@babel/core@7.23.9)
+      '@babel/plugin-syntax-numeric-separator': 7.10.4(@babel/core@7.23.9)
+      '@babel/plugin-syntax-object-rest-spread': 7.8.3(@babel/core@7.23.9)
+      '@babel/plugin-syntax-optional-catch-binding': 7.8.3(@babel/core@7.23.9)
+      '@babel/plugin-syntax-optional-chaining': 7.8.3(@babel/core@7.23.9)
+      '@babel/plugin-syntax-top-level-await': 7.14.5(@babel/core@7.23.9)
+
   /babel-preset-jest@29.2.0(@babel/core@7.20.2):
     resolution: {integrity: sha512-z9JmMJppMxNv8N7fNRHvhMg9cvIkMxQBXgFkane3yKVEvEOP+kB50lk8DFRvF9PGqbyXxlmebKWhuDORO8RgdA==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
@@ -8924,7 +9119,7 @@ packages:
       babel-plugin-jest-hoist: 29.6.3
       babel-preset-current-node-syntax: 1.0.1(@babel/core@7.20.2)
 
-  /babel-preset-jest@29.6.3(@babel/core@7.20.2):
+  /babel-preset-jest@29.6.3(@babel/core@7.23.9):
     resolution: {integrity: sha512-0B3bhxR6snWXJZtR/RliHTDPRgn1sNHOR0yVtq/IiQFyuOVjFS+wuio/R4gSNkyYmKmJB4wGZv2NZanmKmTnNA==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     peerDependencies:
@@ -8933,9 +9128,9 @@ packages:
       '@babel/core':
         optional: true
     dependencies:
-      '@babel/core': 7.20.2
+      '@babel/core': 7.23.9
       babel-plugin-jest-hoist: 29.6.3
-      babel-preset-current-node-syntax: 1.0.1(@babel/core@7.20.2)
+      babel-preset-current-node-syntax: 1.0.1(@babel/core@7.23.9)
 
   /babel-preset-react-app@10.0.1:
     resolution: {integrity: sha512-b0D9IZ1WhhCWkrTXyFuIIgqGzSkRIH5D5AmB0bXbzYAB1OBAwHcUeyWW2LorutLWF5btNo/N7r/cIdmvvKJlYg==}
@@ -8951,10 +9146,10 @@ packages:
       '@babel/plugin-transform-flow-strip-types': 7.23.3(@babel/core@7.23.9)
       '@babel/plugin-transform-react-display-name': 7.23.3(@babel/core@7.23.9)
       '@babel/plugin-transform-runtime': 7.23.9(@babel/core@7.23.9)
-      '@babel/preset-env': 7.22.15(@babel/core@7.23.9)
+      '@babel/preset-env': 7.23.9(@babel/core@7.23.9)
       '@babel/preset-react': 7.22.15(@babel/core@7.23.9)
       '@babel/preset-typescript': 7.23.3(@babel/core@7.23.9)
-      '@babel/runtime': 7.20.0
+      '@babel/runtime': 7.23.9
       babel-plugin-macros: 3.1.0
       babel-plugin-transform-react-remove-prop-types: 0.4.24
     transitivePeerDependencies:
@@ -9701,12 +9896,12 @@ packages:
       webpack:
         optional: true
     dependencies:
-      icss-utils: 5.1.0(postcss@8.4.19)
-      postcss: 8.4.19
-      postcss-modules-extract-imports: 3.0.0(postcss@8.4.19)
-      postcss-modules-local-by-default: 4.0.4(postcss@8.4.19)
-      postcss-modules-scope: 3.1.1(postcss@8.4.19)
-      postcss-modules-values: 4.0.0(postcss@8.4.19)
+      icss-utils: 5.1.0(postcss@8.4.35)
+      postcss: 8.4.35
+      postcss-modules-extract-imports: 3.0.0(postcss@8.4.35)
+      postcss-modules-local-by-default: 4.0.4(postcss@8.4.35)
+      postcss-modules-scope: 3.1.1(postcss@8.4.35)
+      postcss-modules-values: 4.0.0(postcss@8.4.35)
       postcss-value-parser: 4.2.0
       semver: 7.6.0
       webpack: 5.90.3(esbuild@0.14.29)
@@ -12128,17 +12323,6 @@ packages:
     dependencies:
       safer-buffer: 2.1.2
 
-  /icss-utils@5.1.0(postcss@8.4.19):
-    resolution: {integrity: sha512-soFhflCVWLfRNOPU3iv5Z9VUdT44xFRbzjLsEzSr5AQmgqPMTHdU3PMT1Cf1ssx8fLNJDA1juftYl+PUcv3MqA==}
-    engines: {node: ^10 || ^12 || >= 14}
-    peerDependencies:
-      postcss: '*'
-    peerDependenciesMeta:
-      postcss:
-        optional: true
-    dependencies:
-      postcss: 8.4.19
-
   /icss-utils@5.1.0(postcss@8.4.35):
     resolution: {integrity: sha512-soFhflCVWLfRNOPU3iv5Z9VUdT44xFRbzjLsEzSr5AQmgqPMTHdU3PMT1Cf1ssx8fLNJDA1juftYl+PUcv3MqA==}
     engines: {node: ^10 || ^12 || >= 14}
@@ -12507,7 +12691,7 @@ packages:
     resolution: {integrity: sha512-pzqtp31nLv/XFOzXGuvhCb8qhjmTVo5vjVk19XE4CRlSWz0KoeJ3bw9XsA7nOp9YBf4qHjwBxkDzKcME/J29Yg==}
     engines: {node: '>=8'}
     dependencies:
-      '@babel/core': 7.20.2
+      '@babel/core': 7.23.9
       '@babel/parser': 7.23.9
       '@istanbuljs/schema': 0.1.3
       istanbul-lib-coverage: 3.2.2
@@ -12644,11 +12828,11 @@ packages:
       ts-node:
         optional: true
     dependencies:
-      '@babel/core': 7.20.2
+      '@babel/core': 7.23.9
       '@jest/test-sequencer': 29.7.0
       '@jest/types': 29.6.3
       '@types/node': 20.11.19
-      babel-jest: 29.7.0(@babel/core@7.20.2)
+      babel-jest: 29.7.0(@babel/core@7.23.9)
       chalk: 4.1.2
       ci-info: 3.9.0
       deepmerge: 4.3.1
@@ -12902,15 +13086,15 @@ packages:
     resolution: {integrity: sha512-Rm0BMWtxBcioHr1/OX5YCP8Uov4riHvKPknOGs804Zg9JGZgmIBkbtlxJC/7Z4msKYVbIJtfU+tKb8xlYNfdkw==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
-      '@babel/core': 7.20.2
+      '@babel/core': 7.23.9
       '@babel/generator': 7.23.6
-      '@babel/plugin-syntax-jsx': 7.23.3(@babel/core@7.20.2)
-      '@babel/plugin-syntax-typescript': 7.23.3(@babel/core@7.20.2)
+      '@babel/plugin-syntax-jsx': 7.23.3(@babel/core@7.23.9)
+      '@babel/plugin-syntax-typescript': 7.23.3(@babel/core@7.23.9)
       '@babel/types': 7.23.9
       '@jest/expect-utils': 29.7.0
       '@jest/transform': 29.7.0
       '@jest/types': 29.6.3
-      babel-preset-current-node-syntax: 1.0.1(@babel/core@7.20.2)
+      babel-preset-current-node-syntax: 1.0.1(@babel/core@7.23.9)
       chalk: 4.1.2
       expect: 29.7.0
       graceful-fs: 4.2.11
@@ -14932,17 +15116,6 @@ packages:
       postcss: 8.4.35
       postcss-selector-parser: 6.0.15
 
-  /postcss-modules-extract-imports@3.0.0(postcss@8.4.19):
-    resolution: {integrity: sha512-bdHleFnP3kZ4NYDhuGlVK+CMrQ/pqUm8bx/oGL93K6gVwiclvX5x0n76fYMKuIGKzlABOy13zsvqjb0f92TEXw==}
-    engines: {node: ^10 || ^12 || >= 14}
-    peerDependencies:
-      postcss: '*'
-    peerDependenciesMeta:
-      postcss:
-        optional: true
-    dependencies:
-      postcss: 8.4.19
-
   /postcss-modules-extract-imports@3.0.0(postcss@8.4.35):
     resolution: {integrity: sha512-bdHleFnP3kZ4NYDhuGlVK+CMrQ/pqUm8bx/oGL93K6gVwiclvX5x0n76fYMKuIGKzlABOy13zsvqjb0f92TEXw==}
     engines: {node: ^10 || ^12 || >= 14}
@@ -14953,20 +15126,6 @@ packages:
         optional: true
     dependencies:
       postcss: 8.4.35
-
-  /postcss-modules-local-by-default@4.0.4(postcss@8.4.19):
-    resolution: {integrity: sha512-L4QzMnOdVwRm1Qb8m4x8jsZzKAaPAgrUF1r/hjDR2Xj7R+8Zsf97jAlSQzWtKx5YNiNGN8QxmPFIc/sh+RQl+Q==}
-    engines: {node: ^10 || ^12 || >= 14}
-    peerDependencies:
-      postcss: '*'
-    peerDependenciesMeta:
-      postcss:
-        optional: true
-    dependencies:
-      icss-utils: 5.1.0(postcss@8.4.19)
-      postcss: 8.4.19
-      postcss-selector-parser: 6.0.15
-      postcss-value-parser: 4.2.0
 
   /postcss-modules-local-by-default@4.0.4(postcss@8.4.35):
     resolution: {integrity: sha512-L4QzMnOdVwRm1Qb8m4x8jsZzKAaPAgrUF1r/hjDR2Xj7R+8Zsf97jAlSQzWtKx5YNiNGN8QxmPFIc/sh+RQl+Q==}
@@ -14982,18 +15141,6 @@ packages:
       postcss-selector-parser: 6.0.15
       postcss-value-parser: 4.2.0
 
-  /postcss-modules-scope@3.1.1(postcss@8.4.19):
-    resolution: {integrity: sha512-uZgqzdTleelWjzJY+Fhti6F3C9iF1JR/dODLs/JDefozYcKTBCdD8BIl6nNPbTbcLnGrk56hzwZC2DaGNvYjzA==}
-    engines: {node: ^10 || ^12 || >= 14}
-    peerDependencies:
-      postcss: '*'
-    peerDependenciesMeta:
-      postcss:
-        optional: true
-    dependencies:
-      postcss: 8.4.19
-      postcss-selector-parser: 6.0.15
-
   /postcss-modules-scope@3.1.1(postcss@8.4.35):
     resolution: {integrity: sha512-uZgqzdTleelWjzJY+Fhti6F3C9iF1JR/dODLs/JDefozYcKTBCdD8BIl6nNPbTbcLnGrk56hzwZC2DaGNvYjzA==}
     engines: {node: ^10 || ^12 || >= 14}
@@ -15005,18 +15152,6 @@ packages:
     dependencies:
       postcss: 8.4.35
       postcss-selector-parser: 6.0.15
-
-  /postcss-modules-values@4.0.0(postcss@8.4.19):
-    resolution: {integrity: sha512-RDxHkAiEGI78gS2ofyvCsu7iycRv7oqw5xMWn9iMoR0N/7mf9D50ecQqUo5BZ9Zh2vH4bCUR/ktCqbB9m8vJjQ==}
-    engines: {node: ^10 || ^12 || >= 14}
-    peerDependencies:
-      postcss: '*'
-    peerDependenciesMeta:
-      postcss:
-        optional: true
-    dependencies:
-      icss-utils: 5.1.0(postcss@8.4.19)
-      postcss: 8.4.19
 
   /postcss-modules-values@4.0.0(postcss@8.4.35):
     resolution: {integrity: sha512-RDxHkAiEGI78gS2ofyvCsu7iycRv7oqw5xMWn9iMoR0N/7mf9D50ecQqUo5BZ9Zh2vH4bCUR/ktCqbB9m8vJjQ==}
@@ -15666,7 +15801,7 @@ packages:
       react:
         optional: true
     dependencies:
-      '@babel/runtime': 7.20.0
+      '@babel/runtime': 7.23.9
       react: 18.2.0
 
   /react-error-overlay@6.0.11:
@@ -15743,7 +15878,7 @@ packages:
       react:
         optional: true
     dependencies:
-      '@babel/runtime': 7.20.0
+      '@babel/runtime': 7.23.9
       highlight.js: 10.7.3
       lowlight: 1.20.0
       prismjs: 1.29.0
@@ -15758,7 +15893,7 @@ packages:
       react:
         optional: true
     dependencies:
-      '@babel/runtime': 7.20.0
+      '@babel/runtime': 7.23.9
       highlight.js: 10.7.3
       lowlight: 1.20.0
       prismjs: 1.29.0
@@ -15887,7 +16022,7 @@ packages:
   /regenerator-transform@0.15.2:
     resolution: {integrity: sha512-hfMp2BoF0qOk3uc5V20ALGDS2ddjQaLrdl7xrGXvAIow7qeWRM2VA2HuCHkUKk9slq3VwEwLNK3DFBqDfPGYtg==}
     dependencies:
-      '@babel/runtime': 7.20.0
+      '@babel/runtime': 7.23.9
 
   /regex-parser@2.3.0:
     resolution: {integrity: sha512-TVILVSz2jY5D47F4mA4MppkBrafEaiUWJO/TcZHEIuI13AqoZMkK1WMA4Om1YkYbTx+9Ki1/tSUXbceyr9saRg==}
@@ -16122,7 +16257,7 @@ packages:
       adjust-sourcemap-loader: 4.0.0
       convert-source-map: 1.9.0
       loader-utils: 2.0.4
-      postcss: 8.4.19
+      postcss: 8.4.35
       source-map: 0.6.1
 
   /resolve.exports@2.0.2:
@@ -17322,7 +17457,7 @@ packages:
       extend: 3.0.2
       is-plain-obj: 2.1.0
       trough: 1.0.5
-      vfile: 4.2.0
+      vfile: 4.2.1
 
   /unified@9.2.0:
     resolution: {integrity: sha512-vx2Z0vY+a3YoTj8+pttM3tiJHCwY5UFbYdiWrwBEbHmK8pvsPj2rtAX2BFfgXen8T39CJWblWRDT4L5WGXtDdg==}
@@ -18218,10 +18353,142 @@ packages:
   /zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
 
-  file:src/ui/button(@types/react@18.2.23)(react@18.2.0):
-    resolution: {directory: src/ui/button, type: directory}
-    id: file:src/ui/button
-    name: '@ui/button'
+  file:src/components/analytics-drawer(@types/react@18.2.23)(react@18.2.0):
+    resolution: {directory: src/components/analytics-drawer, type: directory}
+    id: file:src/components/analytics-drawer
+    name: '@numudev/components.analytics-drawer'
+    peerDependencies:
+      '@types/react': '*'
+      react: '*'
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      react:
+        optional: true
+    dependencies:
+      '@apollo/client': 3.9.5(@types/react@18.2.23)(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0)
+      '@mdx-js/mdx': 1.6.22
+      '@mdx-js/react': 1.6.22(react@18.2.0)
+      '@teambit/mdx.ui.mdx-scope-context': 1.0.7(@types/react@18.2.23)(react@18.2.0)
+      '@types/jest': 29.5.12
+      '@types/react': 18.2.23
+      '@types/react-dom': 18.2.19
+      '@typescript-eslint/eslint-plugin': 6.19.1(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)(typescript@5.3.3)
+      '@typescript-eslint/parser': 6.19.1(eslint@8.56.0)(typescript@5.3.3)
+      browserslist: 4.21.4
+      eslint: 8.56.0
+      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)
+      eslint-plugin-jest: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)(typescript@5.3.3)
+      eslint-plugin-jsx-a11y: 6.8.0(eslint@8.56.0)
+      eslint-plugin-mdx: 3.1.5(eslint@8.56.0)
+      eslint-plugin-react: 7.33.2(eslint@8.56.0)
+      eslint-plugin-react-hooks: 4.6.0(eslint@8.56.0)
+      graphql: 16.8.1
+      jsdom: 23.2.0
+      pino-pretty: 4.5.0
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      react-router-dom: 6.22.1(react-dom@18.2.0)(react@18.2.0)
+      sass: 1.71.1
+      vitest: 1.2.1(jsdom@23.2.0)(sass@1.71.1)
+      webpack: 5.90.3
+    transitivePeerDependencies:
+      - '@edge-runtime/vm'
+      - '@swc/core'
+      - '@types/node'
+      - '@vitest/browser'
+      - '@vitest/ui'
+      - bufferutil
+      - canvas
+      - esbuild
+      - eslint-import-resolver-typescript
+      - eslint-import-resolver-webpack
+      - graphql-ws
+      - happy-dom
+      - jest
+      - less
+      - lightningcss
+      - stylus
+      - subscriptions-transport-ws
+      - sugarss
+      - supports-color
+      - terser
+      - typescript
+      - uglify-js
+      - utf-8-validate
+      - webpack-cli
+    dev: false
+
+  file:src/library/divider(@types/react@18.2.23)(react@18.2.0):
+    resolution: {directory: src/library/divider, type: directory}
+    id: file:src/library/divider
+    name: '@numudev/library.divider'
+    peerDependencies:
+      '@types/react': '*'
+      react: '*'
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      react:
+        optional: true
+    dependencies:
+      '@apollo/client': 3.9.5(@types/react@18.2.23)(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0)
+      '@mdx-js/mdx': 1.6.22
+      '@mdx-js/react': 1.6.22(react@18.2.0)
+      '@teambit/mdx.ui.mdx-scope-context': 1.0.7(@types/react@18.2.23)(react@18.2.0)
+      '@types/jest': 29.5.12
+      '@types/react': 18.2.23
+      '@types/react-dom': 18.2.19
+      '@typescript-eslint/eslint-plugin': 6.19.1(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)(typescript@5.3.3)
+      '@typescript-eslint/parser': 6.19.1(eslint@8.56.0)(typescript@5.3.3)
+      browserslist: 4.21.4
+      eslint: 8.56.0
+      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)
+      eslint-plugin-jest: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)(typescript@5.3.3)
+      eslint-plugin-jsx-a11y: 6.8.0(eslint@8.56.0)
+      eslint-plugin-mdx: 3.1.5(eslint@8.56.0)
+      eslint-plugin-react: 7.33.2(eslint@8.56.0)
+      eslint-plugin-react-hooks: 4.6.0(eslint@8.56.0)
+      graphql: 16.8.1
+      jsdom: 23.2.0
+      pino-pretty: 4.5.0
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      react-router-dom: 6.22.1(react-dom@18.2.0)(react@18.2.0)
+      sass: 1.71.1
+      vitest: 1.2.1(jsdom@23.2.0)(sass@1.71.1)
+      webpack: 5.90.3
+    transitivePeerDependencies:
+      - '@edge-runtime/vm'
+      - '@swc/core'
+      - '@types/node'
+      - '@vitest/browser'
+      - '@vitest/ui'
+      - bufferutil
+      - canvas
+      - esbuild
+      - eslint-import-resolver-typescript
+      - eslint-import-resolver-webpack
+      - graphql-ws
+      - happy-dom
+      - jest
+      - less
+      - lightningcss
+      - stylus
+      - subscriptions-transport-ws
+      - sugarss
+      - supports-color
+      - terser
+      - typescript
+      - uglify-js
+      - utf-8-validate
+      - webpack-cli
+    dev: false
+
+  file:src/library/forms(@types/react@18.2.23)(react@18.2.0):
+    resolution: {directory: src/library/forms, type: directory}
+    id: file:src/library/forms
+    name: '@numudev/library.textarea'
     peerDependencies:
       '@types/react': '*'
       react: '*'
